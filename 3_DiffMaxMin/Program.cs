@@ -24,10 +24,10 @@ void PrintArray(double[] collect)
     Console.Write("[");
     for (int i = 0; i < collect.Length - 1; i++)
     {
-        Console.Write(collect[i] + ", ");
+        Console.Write($"{collect[i]:0.00}, ");
 
     }
-    Console.Write(collect[collect.Length - 1] + "]");
+    Console.Write($"{collect[collect.Length - 1]:0.00}]");
 }
 double FindMax(double[] arr)
 {
